@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/orderPagetoast.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <div class="cart_flux">
+        <div class="cart_shop">
+            <div class="cart_toptap">
+
+                <a href="javascript:history.back();" class="cart_return"></a>
+                <div class="cart_text">
+                    购物袋
+                    <span></span>
+                    <button class="cart_bianji">编辑</button>
+                </div>
+            </div>
+            <div id="cart_move">
+                <div style="height:0.44rem"></div>
+                <div style="padding-bottom:0.6rem" style="position:relative">
+                    <div class="cart_tianjia">
+
+                    </div>
+                </div>
+            </div>
+            <div class="cart_btm">
+                <div class="cart_bleft">
+                    <button class="cart_sela">清空</button>
+                    <div class="cart_pic">
+                        <p class="cart_sprice">合计￥
+                            <span id="cart_sum"></span>
+                        </p>
+                    </div>
+                </div>
+                <a href="checkout.html">
+                    <div class="cart_bright">
+                        去结算
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="cart_confirm">
+        <div class="cart_title">
+            确认要删除吗?
+        </div>
+        <span class="cart_ok">
+            确定
+        </span>
+        <span class="cart_cancel">
+            取消
+        </span>
+    </div>
+    <div class="cart_confirm1">
+        <div class="cart_title">
+            是否要清空整个购物车吗？
+        </div>
+        <span class="cart_ok">
+            是
+        </span>
+        <span class="cart_cancel">
+            否
+        </span>
+    </div>
+    <script src="frame/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/orderPagetoast.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

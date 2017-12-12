@@ -1,0 +1,347 @@
+@media screen and (max-width:360px) {
+    html {
+        font-size: 85px;
+    }
+}
+
+.checkout_flux {
+    height: auto;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.checkout_shop {
+    background-color: #f2f2f2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   
+    z-index: 2;
+}
+
+.checkout_toptap {
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 0.44rem;
+    background-color: #fff;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 0.16rem;
+    color: #333;
+    position: fixed;
+    z-index: 10;
+}
+
+.checkout_return {
+    width: 0.22rem;
+    height: 0.22rem;
+    background: url(../images/cart_return.png) no-repeat;
+    background-size: 0.22rem 0.22rem;
+    position: absolute;
+    left: 0.1rem;
+    top: 0.1rem;
+    z-index: 2;
+}
+
+.checkout_text {
+    flex: 1;
+    -webkit-box-flex: 1;
+    height: 0.15rem;
+    position: relative;
+    line-height: 0.15rem;
+}
+
+.checkout_toptap::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.checkout_btm {
+    height: 0.6rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.checkout_bleft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    line-height: 0.3rem;
+}
+
+.checkout_bright {
+    width: 1.15rem;
+    height: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.15rem;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: #9b885f;
+    margin-right: 0.15rem;
+    color: #fff;
+}
+
+.checkout_btm::after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+
+.checkout_warp {
+    position: absolute;
+    top: 0.44rem;
+    bottom: 0.6rem;
+    width: 100%;
+  
+}
+
+.checkout_con {
+    box-sizing: border-box;
+}
+
+.checkout_address {
+    position: relative;
+    height: 0.88rem;
+    background: #fff;
+}
+
+.checkout_adlogo {
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 0.12rem;
+    left: 0.15rem;
+    background: url(../images/checkout_wxb.png) no-repeat;
+    background-size: 0.2rem 0.2rem;
+}
+
+.checkout_msg {
+    padding-top: 0.15rem;
+    padding-left: 0.45rem;
+}
+
+.checkout_adtext {
+    text-align: left;
+    font-size: 0.14rem;
+}
+
+.checkout_name {
+    font-size: 0.14rem;
+    padding-right: 0.15rem;
+    position: relative;
+}
+
+.checkout_phone {
+    font-size: 0.14rem;
+    position: relative;
+}
+
+.checkout_dt {
+    padding: 0.15rem 0.49rem 0 0.45rem;
+    margin-bottom: 0.15rem;
+    font-size: 0.14rem;
+    line-height: 0.15rem;
+    text-align: left;
+}
+
+.checkout_more {
+    position: absolute;
+    right: 0.15rem;
+    bottom: 0.25rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../images/checkout_more.png) no-repeat;
+    background-size: 0.4rem 0.4rem;
+}
+
+.checkout_address::after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 2px dashed #9b885f;
+}
+
+.checkout_message {
+    margin-top: 0.1rem;
+    position: relative;
+    height: 0.44rem;
+    background: #fff;
+    display: flex;
+    padding-left: 0.15rem;
+}
+
+.checkout_msn {
+    outline: none;
+    flex: 1;
+    height: 95%;
+    font-size: 0.14rem;
+    border: none;
+}
+
+.checkout_message::before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.checkout_message::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    content: ' ';
+}
+
+.checkout_result {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.checkout_list {
+    position: relative;
+    background: #fff;
+    height: 0.44rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+}
+
+.checkout_list::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    content: ' ';
+}
+
+.checkout_lf {
+    font-size: 0.14rem;
+    color: #999;
+    margin-left: 0.15rem;
+    display: flex;
+    align-items: center;
+}
+
+.checkout_ri {
+    font-family: Arial;
+    font-size: 0.14rem;
+    color: #999;
+    margin-right: 0.15rem;
+}
+
+.checkout_slogo {
+    margin-left: 0.15rem;
+    width: 0.22rem;
+    height: 0.22rem;
+    margin-right: 0.085rem;
+    background: url(../images/cart_selected.png) no-repeat;
+    background-size: 0.22rem 0.22rem;
+    background-color: #9b885f;
+    border-radius: 50%;
+}
+
+.checkout_btmtext {
+    flex: 1;
+    text-align: left;
+}
+
+.checkout_btmpri {
+    font-size: 0.14rem;
+    text-align: left;
+    color: #9b885f;
+}
+
+.checkout_rular {
+    font-size: 0.13rem;
+    color: #333;
+}
+.checkout_confirm {
+    margin-top: -0.435rem;
+    width: 3rem;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5rem;
+    top: 50%;
+    padding: 0.1rem 0.05rem;
+    background: #C69C6D;
+    opacity: 0.9;
+    color: #fff;
+    box-sizing: border-box;
+    z-index: 20;
+    font-size: 0.16rem;
+    display: none;
+}
+.checkout_title {
+    margin: 0.1rem 0;
+}
+.checkout_ok {
+    display: inline-block;
+    width: 0.6rem;
+    margin-right: 0.1rem;
+    padding: 0.05rem;
+    color: white;
+    background-color: #C69C6D;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
+.checkout_confirm1 {
+    margin-top: -0.435rem;
+    width: 3rem;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5rem;
+    top: 50%;
+    padding: 0.1rem 0.05rem;
+    background: #C69C6D;
+    opacity: 0.9;
+    color: #fff;
+    box-sizing: border-box;
+    z-index: 20;
+    font-size: 0.16rem;
+    display: none;
+}

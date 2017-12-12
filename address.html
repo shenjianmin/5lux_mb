@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>收货地址</title>
+  <link rel="shortcut icon" href="images/favicon.ico" >
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/alert.css">
+  <link rel="stylesheet" href="css/address.css">
+</head>
+<body>
+<div class="address-box">
+  <div class="address-message" id="address-message">
+    <div class="address-box-head">
+      <div class="back" id="returnPersonal"><a href="javascript:history.back()" style="display: block;height: 100%"></a></div>
+      <div class="head-title">收货地址</div>
+    </div>
+    <ul id="address-piece"></ul>
+    <div class="add-box" id="add-box">
+      <p class="add-text">您还没有收获地址呦~</p>
+      <input type="button" class="add-button" value="添加收货地址" id="add-button">
+    </div>
+    <div class="address-box-foot" id="add-foot">
+      <input type="button" class="newadd-button" value="新增收货地址" id="newadd">
+      <input type="button" class="agree" value="确定" id="agree">
+    </div>
+  </div>
+  <div class="hidden" id="hidden">
+    <div class="address-box-head">
+      <div class="back" id="returnback"></div>
+      <div class="head-title">添加收货地址</div>
+      <div class="save" id="save">保存</div>
+    </div>
+      <div class="address-box-context">
+        <div class="default">
+          <span class="default-text">设置为默认</span>
+          <span class="default-button"></span>
+        </div>
+      </div>
+      <div class="name-box">
+        <span class="name">收货人</span>
+        <input placeholder="请输入姓名" class="name-text" id="name">
+      </div>
+      <div class="phone-box">
+        <span class="phone">手机</span>
+        <input placeholder="请输入手机号" class="phone-text" id="tel">
+      </div>
+      <div class="area-box" id="area-box">
+        <span class="area">所在区域</span>
+        <span class="area-detail" id="area-detail">省-市-区</span>
+        <span class="more"></span>
+      </div>
+      <div class="postcode-box">
+        <span class="postcode">邮编</span>
+        <input placeholder="请输入邮编" class="postcode-text" id="postcode">
+      </div>
+      <div class="detail-address-box">
+        <span class="detail-address">详细地址</span>
+        <input placeholder="请输入地址" class="detail-address-text" id="detail-address">
+      </div>
+  </div>
+  <div class="address-choose" id="address-choose">
+    <div class="address-box-head">
+      <div class="back" id="back"></div>
+      <div class="head-title">添加收货地址</div>
+    </div>
+    <div class="address-nav" id="address-nav">
+      <div class="nav-text" id="text1">请选择
+        <span class="nav-col"></span>
+      </div>
+    </div>
+    <div class="nav-select-box">
+      <ul class="province">
+        <li class="nav-select" id="beijing">北京</li>
+        <li class="nav-select">安徽</li>
+        <li class="nav-select">福建</li>
+        <li class="nav-select">甘肃</li>
+        <li class="nav-select">广东</li>
+        <li class="nav-select">广西</li>
+        <li class="nav-select">贵州</li>
+        <li class="nav-select">海南</li>
+        <li class="nav-select">河北</li>
+        <li class="nav-select">河南</li>
+        <li class="nav-select">黑龙江</li>
+        <li class="nav-select">湖北</li>
+        <li class="nav-select">湖南</li>
+        <li class="nav-select">吉林</li>
+        <li class="nav-select">江苏</li>
+        <li class="nav-select">江西</li>
+        <li class="nav-select">辽宁</li>
+        <li class="nav-select">内蒙古</li>
+        <li class="nav-select">宁夏</li>
+        <li class="nav-select">青海</li>
+        <li class="nav-select">山东</li>
+        <li class="nav-select">山西</li>
+        <li class="nav-select">陕西</li>
+        <li class="nav-select">山东</li>
+        <li class="nav-select">上海</li>
+        <li class="nav-select">四川</li>
+        <li class="nav-select">天津</li>
+        <li class="nav-select">西藏</li>
+        <li class="nav-select">新疆</li>
+        <li class="nav-select">云南</li>
+        <li class="nav-select">浙江</li>
+        <li class="nav-select">重庆</li>
+        <li class="nav-select">香港</li>
+        <li class="nav-select">澳门</li>
+        <li class="nav-select">台湾</li>
+      </ul>
+      <ul class="city"></ul>
+      <ul class="region"></ul>
+    </div>
+  </div>
+</div>
+<script src="frame/jquery-3.2.1.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/alert.js"></script>
+<script src="js/address.js"></script>
+</body>
+</html>

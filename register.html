@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/confirm.css"/>
+  <link rel="stylesheet" type="text/css" href="css/login.css"/>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+	<div id="register-page" class="register-html">
+		<nav class="login-nav">
+			<div class="go-back">
+				<a href="index.html" class="go-back-a"></a>
+			</div>
+			<div class="login-caption">
+				<p>用户注册</p>
+			</div>
+		</nav>
+		<div class="login-body">
+			<form class="login-form">
+				<div id="login-password" class="login-password">
+						<input type="text" id="register-account" class="login-account" placeholder="请输入用户名" />
+						<i class="clean-password" id="clean-password3"></i>
+				</div>
+				<span id="username-err" class="span">用户名不合法，请填写3-20位的英文数字下划线</span>
+				<div id="login-password" class="login-password">
+					<input class="login-password-input1" id="regiter-password-input1" placeholder="请设置密码" type="password"/>
+					<i class="clean-password" id="clean-password1"></i>
+				</div>
+				<span id="password-err" class="span">密码错误，密码最小长度为6位</span>
+				<div id="login-password" class="login-password">
+					<input class="login-password-input2" id="register-password-input" placeholder="请再次确认密码" type="password"/>
+					<i class="clean-password" id="clean-password2"></i>
+				</div>
+				<span id="same-err" class="span">两次输入密码不一致，请重新输入</span>
+				<input type="button" id="register-button" class="login-button" value="注册" />
+				<div class="login-form-bottom">
+					<span>点击注册,表示同意</span>
+					<a href="protocol.html" class="protocol">《第五大道用户服务协议》</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="frame/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/confirm.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Register.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

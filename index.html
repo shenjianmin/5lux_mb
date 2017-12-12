@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="frame/swiper/swiper-3.4.2.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <!-- 首页搜索框 -->
+  <div class="search-box">
+    <div class="search-box-wrap">
+      <div class="search">
+        <i class="search-pic"></i>
+        <b class="web-address"></b>
+      </div>
+    </div>
+    <span class="totalNum">0</span>
+    <span id="shop-bag" class="shop-bag"></span>
+  </div>
+
+  <!-- 首页banner -->
+  <section class="index-banner">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="images/banner01.jpg" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="images/banner02.jpg" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="images/banner03.jpg" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="images/banner04.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- 热卖推荐 -->
+  <section class="hot-pro">
+    <h3 class="hot-pro-title"><span class="hot-pro-title-txt">热卖推荐</span></h3>
+    <div class="hot-pro-con">
+      <div>
+        <ul id="pro-list" class="pro-list clearfix">
+
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="gotop"></div>
+  <!-- 底部导航区 -->
+  <nav id="bottom-nav" class="index-nav">
+    <ul>
+      <!--注意i里面是不能加div的这里我将i转成了块才可以，不过不是很好-->
+      <li class="index-nav-list selected"><a href="index.html"><i><div class="mark"></div></i><p class="index-nav-list-des">首页</p></a></li>
+      <li class="index-nav-list  myOrder"><a href="javascript:(0)"><i><div class="mark"></div></i><p class="index-nav-list-des">订单</p></a></li>
+      <li class="index-nav-list myCart"><a href="javascript:(0)"><i><div class="mark"></div></i><p class="index-nav-list-des">购物车</p></a></li>
+      <li class="index-nav-list personalCenter"><a href="javascript:(0)"><i><div class="mark"></div></i><p class="index-nav-list-des">我的</p></a></li>
+      <li class="index-nav-list"><a href="javascript:(0)"><i><div class="mark"></div></i><p class="index-nav-list-des">更多</p></a></li>
+    </ul>
+  </nav>
+  
+  <script type="text/javascript" src="frame/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="frame/swiper/swiper-3.4.2.jquery.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/backtotop.js"></script>
+</body>
+</html>

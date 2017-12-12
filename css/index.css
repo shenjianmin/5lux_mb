@@ -1,0 +1,276 @@
+
+/*头部搜索框样式*/
+.search-box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url("../images/search-bg.png") no-repeat;
+  background-size: 100% 0.42rem;
+  z-index: 999;
+}
+
+.search-box-wrap{
+  padding: .06rem .55rem .06rem .17rem;
+}
+
+.search{
+  position: relative;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  background-color: hsla(0,0%,100%,.25);
+  border-radius: 4px;
+  padding-left: 7px;
+}
+
+.search-pic{
+  width: 13px;
+  height: 13px;
+  background: url("../images/search.png") no-repeat;
+  background-size: 13px 13px;
+}
+
+.web-address{
+  width: 75px;
+  height: 12px;
+  background: url("../images/webAddress.png") no-repeat;
+  background-size: 75px 12px;
+  margin-left: 23px;
+}
+
+.search-pic,
+.web-address{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.shop-bag {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.22rem;
+  height: 0.22rem;
+  background: url("../images/shopBag.png") no-repeat;
+  background-size: 0.22rem 0.22rem;
+  right: 0.17rem;
+  z-index: 9999;
+}
+
+/*banner部分样式开始*/
+.index-banner{
+  width: 100%;
+}
+
+.index-banner img {
+  width: 100%;
+}
+
+.swiper-pagination-bullet{
+  border: 1px solid #fff;
+  opacity: 1;
+  background-color: rgba(0,0,0,.2);
+}
+
+.swiper-pagination-bullet-active{
+  background: #fff;
+}
+
+/*底部nav导航样式*/
+.index-nav {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #000;
+}
+
+.index-nav > ul {
+  width: 100%;
+  display: -webkit-flex;
+}
+.index-nav > ul > .index-nav-list{
+  flex: 1;
+  height: 54px;
+  box-sizing: border-box;
+}
+.index-nav-list > a > i{
+  display: block;
+  width: 100%;
+  height: 32px;
+  background: url("../images/home.png") no-repeat bottom center;
+  background-size: 24px 24px;
+}
+.index-nav-list:nth-child(2) > a > i{
+  background: url("../images/order_service.png") no-repeat bottom center;
+  background-size: 24px 24px;
+}
+.index-nav-list:nth-child(3) > a > i{
+  background: url("../images/buy-car.png") no-repeat bottom center;
+  background-size: 24px 24px;
+}
+.index-nav-list:nth-child(4) > a > i{
+  background: url("../images/my.png") no-repeat bottom center;
+  background-size: 24px 24px;
+}
+.index-nav-list:nth-child(5) > a > i{
+  background: url("../images/more.png") no-repeat bottom center;
+  background-size: 24px 24px;
+}
+.index-nav-list > a > p{
+  padding-top: 4px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.mark{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.index-nav li.selected .mark{
+  background: none;
+}
+
+.index-nav li.selected p{
+  color: #fff;
+}
+
+/*热卖推荐样式*/
+.hot-pro{
+  width: 100%;
+}
+.hot-pro .hot-pro-title{
+  position: relative;
+}
+.hot-pro .hot-pro-title-txt{
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+  font-size: .16rem;
+  height: .3rem;
+  text-align: center;
+  line-height: .3rem;
+}
+.hot-pro .hot-pro-title::before{
+  content: "";
+  width: 38%;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.hot-pro .hot-pro-title::after{
+  content: "";
+  width: 38%;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  left: 62%;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.hot-pro-con{
+  margin-top: 5px;
+}
+
+/*商品列表的样式*/
+.pro-list{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 2px;
+}
+
+.pro-list-item{
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 4px;
+}
+.pro-list-item > a {
+  display: block;
+  background: #fafafa;
+  padding-bottom: 4px;
+}
+.pro-list-item:nth-child(2n + 1){
+  padding-right: 2px;
+}
+
+.pro-list-item:nth-child(2n){
+  padding-left: 2px;
+}
+
+/*这里先用padding-top：给下面的图片占了位置*/
+.pli-top{
+  position: relative;
+  font-size: 0;
+  width: 100%;
+  padding-top: 100%;
+}
+.pli-top > img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.pli-bottom{
+  font-size: 0.14rem;
+  padding: 4px;
+}
+.pli-bottom .pro-name{
+  height: 0.4rem;
+  line-height: 0.2rem;
+  overflow: hidden;
+  color: #333;
+  margin: 0.04rem 0;
+}
+.dis-price{
+  height: 0.2rem;
+  font-size: .12rem;
+  color: #ccc;
+  line-height: 0.2rem;
+}
+.price{
+  float: left;
+  font-size: .16rem;
+  color: #b28247;
+  font-weight: bold;
+}
+.sale-count{
+  float: right;
+  font-size: .12rem;
+}
+.totalNum {
+  position: absolute;
+  display: inline-block;
+  width: .15rem;
+  height: .15rem;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #f33;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  line-height: 15px;
+  right: 8px;
+  top: 5px;
+  display: none;
+}
+/*回到顶部*/
+.gotop {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/uptop.png);
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  position: fixed;
+  bottom: 59px;
+  right: 15px;
+  z-index: 50;
+  display: none;
+}

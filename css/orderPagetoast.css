@@ -1,0 +1,17 @@
+.toast {
+  width: 2rem;
+  text-align: center;
+  line-height: .5rem;
+  font-size: .15rem;
+  border-radius: .1rem;
+  position: fixed;
+  left: 23%;
+/*  margin-left: -1rem;*/
+  top: 45%;
+  padding: .1rem 0;
+  background-color: #C69C6D;
+  opacity: .9;
+  filter: alpha(opacity=20);
+  color: #FFFFFF;
+  z-index: 999;
+}

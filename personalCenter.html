@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/favicon.ico" >
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/personalCenter.css">
+    <link rel="stylesheet" href="frame/swiper/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="flux_m" id="app">
+      <!--缓冲页-->
+      <div class="f_lux">Loding....</div>
+      <!--收货地址设置页-->
+      <div class="upInfo">
+          <div class="cover-bg"></div>
+          <!--顶部-->
+          <div class="upInfo_top">
+              <div class="return_last"></div>
+              <div class="customer_photo"></div>
+          </div>
+          <!--中间-->
+          <div class="upInfo_btm">
+              <div class="info_cheig btm_10">
+                  <div class="up_1_tx">用户名</div>
+                  <div class="up_r_tx upInfo_username">aaa</div>
+              </div>
+              <div class="age">
+                  <div class="info_cheig" id="birthday">
+                      <div class="up_1_tx">生日</div>
+                      <div class="up_r_tx">0000-00-00
+                          <div class="more"></div>
+                      </div>
+                    <input type="date" class="input-birth" value="2017-01-01"/>
+                  </div>
+                  <div class="info_cheig btm_10">
+                      <div class="up_1_tx">性别</div>
+                      <div class="up_r_tx">女
+                          <div class="more"></div>
+                      </div>
+                  </div>
+              </div>
+              <!--收货地址-->
+              <div class="info_cheig btm_10" id="address_jump">
+                  <div class="up_1_tx">收货地址</div>
+                  <div class="up_r_tx">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <div class="more"></div>
+                  </div>
+              </div>
+              <div class="center_logout">
+                  <a href="javascript:localStorage.clear(); location.href='index.html';">退出登录</a>
+              </div>
+          </div>
+      </div>
+      <!--个人中心页-->
+      <div class="info">
+          <!--上半截-->
+         <div class="infoTitle">
+           <div class="infoTop">
+               <a href="#" class="sz"></a>
+               <a href="#" class="msz"></a>
+           </div>
+             <div class="info-user">
+                  <div class="user-img"></div>
+                 <p class="user_login_name">
+                     <!--用户名：-->
+                 </p>
+             </div>
+          </div>
+          <!--内容-->
+         <div class="infoCon">
+       <div class="info_order">
+           <a href="orderPage.html" class="info_myOrder">
+               <span class="myOrder_left">
+                   我的订单
+               </span>
+               <span class="myOrder_right">
+                   查看全部
+                   <span>></span>
+               </span>
+           </a>
+           <ul class="info_pay_wrap">
+              <li class="info_pay_list">
+                  <a href="#" class="pay_list_info">
+                     <div class="pay_list_logo pay_list_logo1"></div>
+                      <p class="pay_list_name">待付款</p>
+                  </a>
+              </li>
+              <li class="info_pay_list">
+                  <a href="#" class="pay_list_info">
+                      <div class="pay_list_logo pay_list_logo2"></div>
+                      <p class="pay_list_name">待收货</p>
+                  </a>
+              </li>
+            </ul>
+        </div>
+        <div class="info_order">
+           <a href="#" class="info_myOrder">
+               <span class="myOrder_left">
+                   我的资产
+               </span>
+
+           </a>
+           <ul class="info_pay_wrap">
+               <li class="info_pay_list">
+                   <a href="Coupon.html" class="pay_list_info">
+                       <div class="pay_list_logo pay_list_logo3"></div>
+                       <p class="pay_list_name">优惠券</p>
+                   </a>
+               </li>
+           </ul>
+       </div>
+        <div class="service_phone">
+            客服电话： <a href="#">400-867-6738</a>
+        </div>
+      </div>
+          <nav id="bottom-nav" class="index-nav">
+              <ul>
+                  <!--注意i里面是不能加div的这里我将i转成了块才可以，不过不是很好-->
+                  <li class="index-nav-list selected"><a href="index.html"><i><div class="mark"></div></i><p class="index-nav-list-des">首页</p></a></li>
+                  <li class="index-nav-list myOrder"><a href="#"><i><div class="mark"></div></i><p class="index-nav-list-des">订单</p></a></li>
+                  <li class="index-nav-list myCart"><a href="#"><i><div class="mark"></div></i><p class="index-nav-list-des">购物车</p></a></li>
+                  <li class="index-nav-list personalCenter"><a href="personalCenter.html"><i><div class="mark"></div></i><p class="index-nav-list-des">我的</p></a></li>
+                  <li class="index-nav-list"><a href="#"><i><div class="mark"></div></i><p class="index-nav-list-des">更多</p></a></li>
+              </ul>
+          </nav>
+      </div>
+
+  </div>
+
+</body>
+<script type="text/javascript" src="frame/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/personalCenter.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="frame/swiper/swiper-3.4.2.jquery.min.js"></script>
+</html>

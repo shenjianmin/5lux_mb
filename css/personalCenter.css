@@ -1,0 +1,319 @@
+html,body{
+    width:100%;
+    font-size:100px;
+    line-height: 1;
+    font-weight: 200;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: PingFang SC,STHeiTisc-Light,Helvetice-Light,arial,sans-serif;
+}
+/*盒子*/
+.flux_m{
+    width:100%;
+    height:auto;
+    text-align:center;
+    left:0;
+    bottom:0;
+}
+/*缓冲页*/
+ .f_lux{
+     width:100%;
+     position: absolute;
+     left:0;
+     bottom:0;
+     top:0;
+     background:#fff;
+     line-height: 6rem;
+     text-align: center;
+     font-size:20px;
+     display: none;
+ }
+/*个人中心页*/
+.info{
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:.49rem;
+    background:#f2f2f2;
+    top:0;
+    overflow:hidden;
+
+}
+.info .infoTitle{
+    width:100%;
+    height:1.92rem;
+    background:url(../images/center-bg.png);
+    background-size:100% 1.92rem ;
+    background-repeat:no-repeat;
+    position:relative;
+}
+.info .infoTop{
+    width:92%;
+    height:.22rem;
+    padding:0 .17rem;
+    padding-top:.11rem;
+}
+  .info .infoTop .sz{
+    width:.22rem;
+    height:.22rem;
+    float: left;
+    background:url(../images/setinfo.png);
+    background-size: 100% 100%  ;
+    background-repeat: no-repeat;
+  }
+  .info .infoTop .msz{
+    width:.22rem;
+    height:.22rem;
+    float:right;
+    background:url(../images/talkabout.png);
+    background-size:100% 100%  ;
+    background-repeat: no-repeat;
+  }
+  .info-user{
+      width:100%;
+      height:.6rem;
+      align-items: center;
+      position:absolute;
+      left:.15rem;
+      bottom:.54rem;
+      -webkit-box-align: center;
+      display: flex;
+  }
+.info-user .user-img{
+    width:.6rem;
+    height:.6rem;
+    background:url(../images/userimg.png) no-repeat;
+    background-size:100%;
+    margin-right:.15rem;
+}
+.user_login_name{
+    font-size:.16rem;
+    color:white;
+    width:50%;
+    height:.16rem;
+    text-align: left;
+
+}
+.infoCon{
+     width:100%;
+     position: absolute;
+     left:0;
+     top:1.92rem;
+     bottom:.49rem;
+}
+.info_order{
+    width:100%;
+    margin-bottom:.1rem;
+    background:#fff;
+}
+.info_myOrder{
+    display:block;
+    padding:0 .17rem;
+    padding-left:.05rem;
+    width:92%;
+    font-size:13px;
+    height:.4rem;
+    margin-left: .05rem;
+    border-bottom: 1px solid #f4f2f2;
+}
+.info_myOrder .myOrder_left{
+    width:20%;
+    height:100%;
+    line-height:.4rem;
+    float:left;
+    color:black;
+}
+.info_myOrder .myOrder_right{
+    width:20%;
+    height:100%;
+    line-height: .4rem;
+    float:right;
+    color:black;
+}
+.info_myOrder .myOrder_right > span{
+    width:30%;
+    height:100%;
+    line-height:.4rem;
+}
+.info_pay_wrap{
+    width:95%;
+    height:.64rem;
+    padding-left:5%;
+}
+.info_pay_wrap .info_pay_list {
+    float: left;
+    list-style: none;
+    width: .75rem;
+    height: .4rem;
+    margin-top: .1rem;
+}
+.pay_list_info{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.pay_list_info .pay_list_logo{
+    width:.22rem;
+    height:.28rem;
+    margin: 0 auto;
+}
+.pay_list_info .pay_list_logo1{
+    background:url(../images/wallet.png) no-repeat;
+    background-size:100%;
+}
+.pay_list_info .pay_list_logo2{
+    background:url(../images/truck.png) no-repeat;
+    background-size:100%;
+}
+.pay_list_info .pay_list_logo3{
+    background:url(../images/discount.png) no-repeat;
+    background-size:100%;
+}
+.pay_list_info .pay_list_name{
+    width:100%;
+    height:.12rem;
+    font-size:10px;
+    text-align:center;
+    line-height:.12rem;
+}
+.service_phone{
+    width:95%;
+    padding-left:5%;
+    height:.44rem;
+    background:white;
+    font-size:13px;
+    text-align: left;
+    line-height:.44rem;
+}
+.service_phone a{
+    color:#808040;
+    font-weight: bold;
+}
+/*收货地址管理页*/
+.upInfo{
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+    background:url(../images/center-bg2.png) no-repeat;
+    background-size: 100%;
+    top:0;
+    overflow:hidden;
+    z-index:0;
+    display: none;
+}
+.cover-bg{
+    width:100%;
+    height:100%;
+    background:hsla(0,0%,100%,.7);;
+    position:absolute;
+    opacity: .8;
+    z-index:1;
+}
+.upInfo_top{
+    width:100%;
+    height:1.51rem;
+    position:relative;
+    z-index:2;
+}
+.return_last{
+    width:.22rem;
+    height:.22rem;
+    position:absolute;
+    left:0;
+    top:0;
+    background:url(../images/back.png) no-repeat;
+    background-size:.22rem;
+    background-position: 15px 11px;
+    padding:11px 15px;
+    z-index:5;
+}
+.customer_photo{
+    position:absolute;
+    left:50%;
+    margin-left:-.4rem;
+    width:.8rem;
+    height:.8rem;
+    bottom:.3rem;
+    border-radius:50%;
+    background:url(../images/human.png) no-repeat ;
+    background-size:.8rem;
+}
+.upInfo_btm{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    top:1.51rem;
+    z-index:2;
+}
+.btm_10{
+    margin-bottom:.1rem;
+}
+.info_cheig{
+  position: relative;
+    height:.45rem;
+    background:#fff;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #000;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+}
+.up_1_tx{
+    width:.56rem;
+    margin-right:.135rem;
+}
+.up_r_tx{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 69.5px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+ }
+ .more{
+   width:.07rem;
+   height:.13rem;
+   background:url(../images/next_small.png) no-repeat;
+   background-size:7px 13px;
+   margin-left:5px;
+   float: right;
+ }
+ .upInfo_btm .center_logout{
+     height: .36rem;
+     width: 2.7rem;
+     margin: 0 auto;
+     margin-top: .4rem;
+     background: #000;
+     border-radius: 5px;
+     color: #fff;
+     text-align: center;
+     font-size: 18px;
+     line-height: .36rem;
+ }
+.upInfo_btm .center_logout a{
+    text-decoration: none;
+}
+
+.input-birth{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  font-size: 0;
+  border: none;
+}

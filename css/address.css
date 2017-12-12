@@ -1,0 +1,245 @@
+body{
+  font-size: 0.14rem;
+  background-color: #e5e5e5;
+  color:black;
+}
+.address-box-head{
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 44px;
+  background-color: white;
+  border-bottom: 1px solid #e5e5e5;
+}
+.back{
+  margin:11px 15px;
+  width: 22px;
+  height: 22px;
+  background:url("../images/back.png") no-repeat;
+  background-size: contain;
+  float: left;
+  position:absolute;
+  z-index:10;
+}
+.head-title{
+  width: 100%;
+  margin-right:-45px;
+  float:left;
+  text-align: center;
+  line-height: 44px;
+}
+.save{
+  position: absolute;
+  right: 15px;
+  top: 0;
+  line-height: 44px;
+}
+.address-box-context{
+  width:100%;
+  margin-top: 54px;
+}
+.default,.name-box,.phone-box,.area-box,.postcode-box,.detail-address-box{
+  width: 100%;
+  padding-left: 15px;
+  margin-top: 10px;
+  background-color: white;
+  height: 44px;
+}
+.default-text,.name,.phone,.area,.postcode,.detail-address,.area-detail{
+  line-height: 44px;
+}
+.default-button{
+  background: url("../images/logo-close.png") no-repeat;
+  background-size: contain;
+  display:block;
+  width: 0.51rem;
+  height: 0.31rem;
+  float: right;
+  padding-right: 50px;
+  margin-top: 6px;
+}
+.default-open{
+  background: url("../images/logo-open.png") no-repeat;
+  background-size: contain;
+  display:block;
+  width: 0.51rem;
+  height: 0.31rem;
+  float: right;
+  padding-right: 50px;
+  margin-top: 6px;
+}
+.name-box,.postcode-box,.area-box{
+  border-bottom: 1px solid #e5e5e5;
+}
+.name-text,.phone-text,.postcode-text,.detail-address-text{
+  border: none;
+  outline: none;
+  display:inline-block;
+  height: 38px;
+  line-height: 38px;
+}
+.name-text{
+  margin-left: 20px;
+}
+.phone-box,.postcode-box,.detail-address-box{
+  margin-top: 0;
+}
+.phone-text,.postcode-text{
+  margin-left: 35px;
+}
+.detail-address-text,.area-detail{
+  margin-left: 5px;
+}
+.area-detail{
+  color:#757575;
+}
+.more{
+  width: 22px;
+  height: 22px;
+  margin: 11px 17px;
+  background: url("../images/more.png") no-repeat;
+  background-size: contain;
+  padding-right: 17px;
+  float: right;
+}
+.address-nav{
+  margin-top: 44px;
+  width: 100%;
+  height: 43px;
+  background-color: white;
+  border-bottom:1px solid #e5e5e5;
+  display: flex;
+}
+.nav-text{
+  flex: 0 0 14.333%;
+  margin: 0 10%;
+  text-align: center;
+  line-height: 42px;
+  color:#afa081;
+  position: relative;
+}
+.nav-col{
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #afa081;
+  left: 0;
+  bottom: 0;
+}
+.nav-select-box{
+  background: white;
+  width: 100%;
+}
+.nav-select{
+  width:100%;
+  height: 39px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 15px;
+  line-height: 39px;
+}
+.address-box{
+  overflow: hidden;
+}
+.address-choose,.hidden,.city,.region{
+  display: none;
+}
+.add-box{
+  width: 100%;
+  height: 2rem;
+  margin-top: 40%;
+  text-align: center;
+  overflow: hidden;
+}
+.add-text{
+  color:grey;
+  margin-top: 0.5rem;
+}
+.add-button{
+  width: 80%;
+  height: 0.5rem;
+  background-color: #9b895e;
+  margin-top: 0.3rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+}
+.address-box-foot{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 0.6rem;
+  background-color: white;
+  bottom: 0;
+  left:0
+}
+.newadd-button{
+  height: 0.4rem;
+  width: 44.5%;
+  margin-left: 4%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #9b895e;
+  color: #9b895e;
+  background-color: white;
+  margin-top: 0.1rem;
+}
+.agree{
+  height: 0.4rem;
+  width: 44.5%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #9b895e;
+  background-color: #9b895e;
+  color: white;
+  margin-left: 2%;
+}
+#address-piece{
+  display: none;
+  width: 100%;
+  padding: 44px 0 0.6rem 0;
+}
+.information{
+  height:0.9rem;
+  width: 100%;
+  background-color: white;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.adds{
+  float: left;
+  display: block;
+  width: 45%;
+  text-align: left;
+  margin-top: 15px;
+  font-size: 16px;
+  padding-left: 15px;
+}
+.adds1{
+  text-align: center;
+}
+.adds2{
+  width: 75%;
+}
+.delete{
+  width: 50px;
+  height: 25px;
+  float: right;
+  border: none;
+  background-color: #9b895e;
+  color: white;
+  margin-right: 15px;
+  margin-top: 25px;
+}
+.touch{
+  border:2px solid #9b895e;
+  box-sizing: border-box;
+  height:0.9rem;
+  width: 100%;
+  background-color: white;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+
+
